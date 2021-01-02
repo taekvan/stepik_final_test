@@ -16,7 +16,7 @@ class BasketPage(BasePage):
 
     def basket_is_empty_text_exist(self):
         basket_is_empty = self.browser.find_element(*BasetPageLocators.BASKET_EMPT)
-        assert "Ваша корзина пуста" in basket_is_empty.text  , f"You basket is not empty {basket_is_empty.text}"
+        assert "Your basket is empty" in basket_is_empty.text  , f"You basket is not empty {basket_is_empty.text}"
 
 
     def add_to_basket(self):
